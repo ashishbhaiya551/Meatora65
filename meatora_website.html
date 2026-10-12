@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f7f0">
+<meta name="description" content="MEATORA Land & Sea — fresh raw chicken, mutton and fish, packed with care. Order on WhatsApp.">
+<title>MEATORA — Land & Sea | Fresh Raw Food</title>
+<style>
+:root{--cream:#f7f7f0;--white:#fff;--green:#285b3a;--green2:#e9f1e8;--blue:#1879b8;--blue2:#eaf4fb;--ink:#18332a;--muted:#61716a;--line:#e4e9e2;--shadow:0 12px 35px rgba(27,54,40,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:2px;font-size:1.2rem}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--green);color:#fff;font-size:1.3rem}.brand small{display:block;letter-spacing:4px;font-size:.62rem;color:var(--blue);font-weight:800;margin-top:-3px}.navlinks{display:flex;gap:24px;color:#45574d;font-size:.9rem}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{border:0;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:white;padding:12px 18px;border-radius:999px;font-weight:750;cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}.menu-toggle{display:none;background:white;border:1px solid var(--line);border-radius:12px;padding:9px 12px}
+.hero{padding:58px 0 42px;background:radial-gradient(circle at 80% 25%,#e6f0e4 0,transparent 30%),linear-gradient(135deg,#fff 0%,#f7f7f0 72%)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:35px;align-items:center}.eyebrow{font-size:.75rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);font-weight:850}.hero h1{font-size:clamp(2.6rem,5vw,4.7rem);line-height:1.02;letter-spacing:-2px;margin:16px 0}.hero h1 span{color:var(--blue);font-weight:650}.hero p{color:var(--muted);font-size:1.05rem;max-width:520px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.btn.secondary{background:white;color:var(--green);border:1px solid #dbe5d9}.trust-line{display:flex;gap:15px;flex-wrap:wrap;color:#4c6557;font-size:.83rem}.hero-art{min-height:340px;border-radius:32px;overflow:hidden;position:relative;background:#e7efe4;box-shadow:var(--shadow)}.hero-art img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block}.art-label{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);padding:12px 16px;border-radius:16px;font-weight:800;box-shadow:var(--shadow)}.art-label small{display:block;font-weight:500;color:var(--muted)}
+section{padding:58px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 28px}.section-head h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;margin:9px 0}.section-head p{color:var(--muted);margin:0}.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.category{min-height:270px;padding:25px;border-radius:24px;overflow:hidden;position:relative;display:flex;align-items:flex-start;box-shadow:var(--shadow)}.category.land{background:linear-gradient(115deg,#edf4e9 0%,#f5f8f1 58%,#dfe9dc 100%)}.category.sea{background:linear-gradient(115deg,#e9f4fc 0%,#f5faff 58%,#d9eaf8 100%)}.category-copy{position:relative;z-index:2;max-width:55%}.category .eyebrow{color:var(--green)}.category.sea .eyebrow{color:var(--blue)}.category h3{font-size:1.65rem;line-height:1.1;margin:8px 0}.category p{color:var(--muted);font-size:.9rem}.category img{position:absolute;right:0;bottom:0;width:52%;height:85%;object-fit:contain;object-position:right bottom}.category .btn{padding:10px 15px;font-size:.88rem}.category.sea .btn{background:var(--blue)}
+.products-section{background:#fff}.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 25px}.filter{border:1px solid var(--line);background:white;color:#52635a;border-radius:999px;padding:9px 16px;cursor:pointer;font-weight:700}.filter.active{background:var(--green);color:white;border-color:var(--green)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product-card{border:1px solid var(--line);border-radius:19px;overflow:hidden;background:#fff;transition:.2s}.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.product-image{height:175px;background:#f4f6f0;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block}.product-info{padding:15px}.tag{display:inline-block;background:var(--green2);color:var(--green);border-radius:999px;padding:4px 9px;font-size:.68rem;font-weight:800}.tag.fish{background:var(--blue2);color:var(--blue)}.product-info h3{font-size:1rem;margin:9px 0 4px}.product-info p{color:var(--muted);font-size:.82rem;margin:0 0 12px;min-height:40px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.price{font-weight:850;font-size:1.02rem}.price small{font-size:.72rem;font-weight:500;color:var(--muted)}.order-btn{width:100%;border:0;border-radius:11px;padding:10px;background:#e8f3e8;color:var(--green);font-weight:800;cursor:pointer}.order-btn:hover{background:var(--green);color:white}.custom-note{text-align:center;color:var(--muted);font-size:.83rem;margin-top:20px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{padding:22px 16px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}.feature-icon{font-size:1.6rem}.feature h3{font-size:.98rem;margin:8px 0 5px}.feature p{font-size:.82rem;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-photo{border-radius:25px;overflow:hidden;min-height:300px;background:#e9f0e6}.about-photo img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}.about-copy h2{font-size:2.2rem;line-height:1.12;margin:10px 0 15px}.about-copy p{color:var(--muted)}.check-list{padding:0;list-style:none;display:grid;gap:9px}.check-list li:before{content:"✓";display:inline-grid;place-items:center;background:var(--green);color:white;width:21px;height:21px;border-radius:50%;font-size:.75rem;margin-right:9px}
+.order-banner{background:var(--green);color:white;border-radius:26px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:25px}.order-banner h2{font-size:1.8rem;margin:0 0 6px}.order-banner p{margin:0;color:#e0eee1}.order-banner .btn{background:white;color:var(--green);white-space:nowrap}
+footer{margin-top:60px;background:#fff;border-top:1px solid var(--line);padding:30px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-note{color:var(--muted);font-size:.82rem}.footer-links{display:flex;gap:18px;font-size:.85rem;color:#52635a}.tiny{font-size:.75rem;color:#87948b;margin-top:15px}
+dialog{border:0;border-radius:22px;padding:25px;width:min(460px,92vw);box-shadow:0 20px 80px #102b1d40}dialog::backdrop{background:#102b1d80}.modal-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.modal-head h2{margin:0}.close{border:0;background:#f0f2ee;border-radius:10px;padding:8px 11px;cursor:pointer}.form-grid{display:grid;gap:12px;margin:18px 0}.form-grid label{font-size:.85rem;font-weight:750}.form-grid input,.form-grid select,.form-grid textarea{width:100%;margin-top:5px;padding:12px;border:1px solid #dbe2d9;border-radius:11px;background:white}.form-grid textarea{min-height:75px;resize:vertical}.modal-help{font-size:.78rem;color:var(--muted)}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:70px;left:4%;right:4%;background:white;border:1px solid var(--line);border-radius:16px;padding:18px;flex-direction:column;gap:15px;box-shadow:var(--shadow)}.navlinks.open{display:flex}.menu-toggle{display:block}.nav-cta{display:none}.hero{padding-top:35px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:260px}.hero-art img{min-height:260px}.category-grid{grid-template-columns:1fr}.category{min-height:245px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:145px}.features{grid-template-columns:repeat(2,1fr)}.order-banner{align-items:flex-start;flex-direction:column}.about-photo,.about-photo img{min-height:240px}}
+@media(max-width:390px){.brand{font-size:1rem}.brand-mark{width:37px;height:37px}.product-info{padding:11px}.product-image{height:125px}.category-copy{max-width:60%}.category h3{font-size:1.4rem}.hero h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="MEATORA home"><span class="brand-mark">M</span><span>MEATORA<small>LAND &amp; SEA</small></span></a>
+    <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#products">Our Products</a><a href="#freshness">Quality &amp; Freshness</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#products">Explore Products ↗</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Fresh • Clean • Carefully Packed</div>
+      <h1>MEATORA<br><span>LAND &amp; SEA</span></h1>
+      <h2 style="font-size:1.22rem;font-weight:650;margin:0">Fresh raw food. Delivered with care.</h2>
+      <p>Quality chicken, mutton and fish for your kitchen. Choose your cuts, check the price and place your order directly on WhatsApp.</p>
+      <div class="hero-actions"><a class="btn" href="#products">Shop Fresh Picks →</a><a class="btn secondary" href="#freshness">Our Quality Promise</a></div>
+      <div class="trust-line"><span>✓ Quality-focused sourcing</span><span>✓ Careful handling</span><span>✓ Easy WhatsApp orders</span></div>
+    </div>
+    <div class="hero-art">
+      <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1100&q=85" alt="Fresh raw meat ingredients on a board" onerror="this.style.display='none'">
+      <div class="art-label">Freshness you can trust<small>MEATORA • LAND &amp; SEA</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our Categories</div><h2>Good food starts with good ingredients.</h2><p>Explore our land and sea selection, prepared for your everyday kitchen.</p></div>
+    <div class="category-grid">
+      <article class="category land">
+        <div class="category-copy"><div class="eyebrow">LAND</div><h3>Chicken &amp;<br>Mutton</h3><p>Fresh raw cuts for your favourite home-cooked meals.</p><a class="btn" href="#products" onclick="setFilter('land')">Explore Land →</a></div>
+        <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=600&q=80" alt="Raw chicken cuts" onerror="this.style.display='none'">
+      </article>
+      <article class="category sea">
+        <div class="category-copy"><div class="eyebrow">SEA</div><h3>Fresh Fish</h3><p>Fish varieties selected for your kitchen table.</p><a class="btn" href="#products" onclick="setFilter('sea')">Explore Sea →</a></div>
+        <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=600&q=80" alt="Fresh fish" onerror="this.style.display='none'">
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="products-section" id="products">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our Products</div><h2>Fresh picks for your kitchen</h2><p>Choose a product to start a WhatsApp order. Prices below are sample prices—edit them before publishing.</p></div>
+    <div class="filters" role="group" aria-label="Filter products"><button class="filter active" onclick="setFilter('all')">All Products</button><button class="filter" onclick="setFilter('land')">Chicken &amp; Mutton</button><button class="filter" onclick="setFilter('sea')">Fish</button></div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="custom-note">Prices, availability and cut options should be confirmed before order acceptance.</p>
+  </div>
+</section>
+
+<section id="freshness">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our Promise</div><h2>Freshness and care, at every step.</h2><p>Show customers the standards your business follows. Only publish claims that are true for your operation.</p></div>
+    <div class="features">
+      <article class="feature"><div class="feature-icon">❄️</div><h3>Temperature Care</h3><p>Keep products properly chilled during storage and delivery.</p></article>
+      <article class="feature"><div class="feature-icon">🧼</div><h3>Clean Handling</h3><p>Follow hygienic handling and food-safe cleaning practices.</p></article>
+      <article class="feature"><div class="feature-icon">📦</div><h3>Secure Packing</h3><p>Use food-grade, leak-resistant packaging suited to raw food.</p></article>
+      <article class="feature"><div class="feature-icon">🤝</div><h3>Clear Communication</h3><p>Confirm weight, price, availability and delivery time.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:10px">
+  <div class="wrap about-grid">
+    <div class="about-photo"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=80" alt="Raw food ingredients carefully arranged" onerror="this.style.display='none'"></div>
+    <div class="about-copy"><div class="eyebrow">Why MEATORA</div><h2>Simple choices.<br>Thoughtful quality.</h2><p>MEATORA brings chicken, mutton and fish together in one easy-to-use place. Browse the selection, ask about availability and order directly with our team on WhatsApp.</p><ul class="check-list"><li>Chicken and mutton under Land</li><li>Fish varieties under Sea</li><li>Product details confirmed before order</li><li>Friendly, direct WhatsApp support</li></ul></div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:5px">
+  <div class="wrap">
+    <div class="order-banner"><div><h2>Ready to order fresh?</h2><p>Message MEATORA on WhatsApp to check today's availability.</p></div><button class="btn" onclick="openGeneralWhatsApp()">Chat on WhatsApp ↗</button></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <a class="brand" href="#home"><span class="brand-mark">M</span><span>MEATORA<small>LAND &amp; SEA</small></span></a>
+      <div class="footer-links"><a href="#products">Products</a><a href="#freshness">Our Promise</a><a href="#contact">Contact</a></div>
+      <div class="footer-note">Fresh food. Better choices.</div>
+    </div>
+    <div class="tiny">© <span id="year"></span> MEATORA. Replace sample prices and WhatsApp number before publishing. Food handling and delivery claims should match your actual practices.</div>
+  </div>
+</footer>
+
+<dialog id="orderDialog">
+  <div class="modal-head"><h2>Order on WhatsApp</h2><button class="close" onclick="closeOrder()" aria-label="Close">✕</button></div>
+  <p id="selectedProduct" style="color:#61716a;margin:8px 0 0"></p>
+  <div class="form-grid">
+    <label>Your name<input id="customerName" placeholder="Enter your name" autocomplete="name"></label>
+    <label>Quantity / weight<select id="quantity"><option>500 g</option><option selected>1 kg</option><option>2 kg</option><option>Custom quantity (mention below)</option></select></label>
+    <label>Delivery area<input id="customerArea" placeholder="Your area / PIN code"></label>
+    <label>Notes (optional)<textarea id="customerNotes" placeholder="Cut preference or other request"></textarea></label>
+  </div>
+  <p class="modal-help">Your details will be placed in a WhatsApp message. The order is not confirmed until the seller replies.</p>
+  <button class="btn" style="width:100%" onclick="sendWhatsAppOrder()">Continue to WhatsApp ↗</button>
+</dialog>
+<script>
+// IMPORTANT: Replace this with your WhatsApp number including country code, digits only.
+// Example for India: 919876543210 (do not use +, spaces or hyphens).
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+// Edit product names, descriptions, prices and image URLs below.
+// Prices are examples only. Set your actual prices before publishing.
+const products = [
+ {id:1,name:"Chicken Breast",category:"land",label:"CHICKEN",weight:"per kg",price:320,desc:"Boneless cut for everyday cooking.",image:"https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=700&q=80"},
+ {id:2,name:"Chicken Curry Cut",category:"land",label:"CHICKEN",weight:"per kg",price:240,desc:"Convenient curry-cut pieces.",image:"https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=700&q=80"},
+ {id:3,name:"Chicken Drumsticks",category:"land",label:"CHICKEN",weight:"per kg",price:280,desc:"Great for roasting and curries.",image:"https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=700&q=80"},
+ {id:4,name:"Mutton Curry Cut",category:"land",label:"MUTTON",weight:"per kg",price:780,desc:"Classic cut for slow-cooked dishes.",image:"https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=700&q=80"},
+ {id:5,name:"Rohu Fish",category:"sea",label:"FISH",weight:"per kg",price:220,desc:"Ask us about whole or cut options.",image:"https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=700&q=80"},
+ {id:6,name:"Katla Fish",category:"sea",label:"FISH",weight:"per kg",price:260,desc:"Availability and cuts confirmed by chat.",image:"https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=700&q=80"},
+ {id:7,name:"Pomfret",category:"sea",label:"FISH",weight:"per kg",price:550,desc:"Ask for today's size and availability.",image:"https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=700&q=80"},
+ {id:8,name:"Surmai Fish",category:"sea",label:"FISH",weight:"per kg",price:650,desc:"Confirm today's catch and price with us.",image:"https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=700&q=80"}
+];
+let selected = null;
+function money(n){return "₹"+Number(n).toLocaleString("en-IN")}
+function renderProducts(filter="all"){
+ const grid=document.getElementById("productGrid");
+ grid.innerHTML="";
+ products.filter(p=>filter==="all"||p.category===filter).forEach(p=>{
+  const card=document.createElement("article");card.className="product-card";
+  card.innerHTML=`<div class="product-image"><img loading="lazy" src="${p.image}" alt="${p.name}" onerror="this.style.display='none'"></div><div class="product-info"><span class="tag ${p.category==='sea'?'fish':''}">${p.label}</span><h3>${p.name}</h3><p>${p.desc}</p><div class="price-row"><span class="price">${money(p.price)} <small>/${p.weight.replace('per ','')}</small></span></div><button class="order-btn" onclick="openOrder(${p.id})">Order on WhatsApp ↗</button></div>`;
+  grid.appendChild(card);
+ });
+ document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",(filter==="all"&&b.textContent.includes("All"))||(filter==="land"&&b.textContent.includes("Chicken"))||(filter==="sea"&&b.textContent==="Fish")));
+}
+function setFilter(f){renderProducts(f)}
+function openOrder(id){
+ selected=products.find(p=>p.id===id);
+ document.getElementById("selectedProduct").textContent=selected.name+" — "+money(selected.price)+" / "+selected.weight.replace("per ","");
+ document.getElementById("orderDialog").showModal();
+}
+function closeOrder(){document.getElementById("orderDialog").close()}
+function validNumber(){return /^\d{10,15}$/.test(WHATSAPP_NUMBER)}
+function sendWhatsAppOrder(){
+ if(!validNumber()){alert("Pehle code mein WHATSAPP_NUMBER ko apne WhatsApp number se replace karo. Example: 919876543210");return}
+ const name=document.getElementById("customerName").value.trim();
+ const qty=document.getElementById("quantity").value;
+ const area=document.getElementById("customerArea").value.trim();
+ const notes=document.getElementById("customerNotes").value.trim();
+ if(!name){alert("Please apna naam bharo.");return}
+ const msg=`Hello MEATORA! I would like to enquire/order:\nProduct: ${selected.name}\nListed price: ${money(selected.price)} / ${selected.weight.replace("per ","")}\nQuantity: ${qty}\nName: ${name}\nDelivery area: ${area||"Will share on chat"}\nNotes: ${notes||"None"}\nPlease confirm availability, final price and delivery charges.`;
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank");
+}
+function openGeneralWhatsApp(){
+ if(!validNumber()){alert("Pehle code mein WHATSAPP_NUMBER ko apne WhatsApp number se replace karo. Example: 919876543210");return}
+ const msg="Hello MEATORA! Please share today's available chicken, mutton and fish varieties, prices and delivery details.";
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank");
+}
+document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("navlinks").classList.toggle("open"));
+document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("open")));
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();
+</script>
+</body>
+</html>
